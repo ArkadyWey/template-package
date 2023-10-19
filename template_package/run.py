@@ -1,9 +1,11 @@
 """"
 Run code from package and subpackage.
 """
-import template_package
-import template_package.template_subpackage
+import numpy
 
-data = template_package.module.get_data()
+import module
+import template_subpackage.submodule
 
-template_package.template_subpackage.submodule.plpot_data(data)
+data = module.get_data()
+
+template_subpackage.submodule.plot_data(data)
