@@ -1,0 +1,1 @@
+Template package to check basic functionality.
