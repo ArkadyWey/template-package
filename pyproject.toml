@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools", 
+            "wheel"] 
+# setuptools and wheel are necessary for the build
+
+[project]
+name = "template_package"
+version = "1.0.0"
+description = "A package to explore package MWE functionality."
+authors = [
+    {name = "Arkady Wey", 
+    email = "arkady.wey@maths.ox.ac.uk"}
+]
+readme = "README.md"
+homepage = "https://github.com/ArkadyWey/template-package/"
+license = "GPLv3"
+
+[project.poetry]
+readme = "template_package/README.md"
+
+[project.urls]
+Source = "https://github.com/ArkadyWey/template-package/"
+
+[project.scripts] 
+# Define scripts here if you have any
+
+[project.dependencies]
+numpy = "*"
+matplotlib = "*"
+
+[project.optional-dependencies] 
+# Define optional dependencies here if you have any
