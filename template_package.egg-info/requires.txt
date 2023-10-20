@@ -1,5 +1,0 @@
-matplotlib
-numpy
-
-[test]
-pytest<5.0.0
