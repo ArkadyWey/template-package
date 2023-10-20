@@ -1,32 +1,39 @@
-[build-system]
-requires = ["setuptools", 
-            "wheel"] 
-# setuptools and wheel are necessary for the build
-
 [project]
 name = "template_package"
 version = "1.0.0"
-description = "A package to explore package MWE functionality."
-authors = [
-    {name = "Arkady Wey", 
-    email = "arkady.wey@maths.ox.ac.uk"}
-]
+description = "A package to explore MWE package functionality"
 readme = "README.md"
-homepage = "https://github.com/ArkadyWey/template-package/"
-license = "GPLv3"
+requires-python = ">=3.9"
+license = {file = "LICENSE.txt"}
+keywords = ["MWE", "template"]
+authors = [
+  {email = "arkady.wey@maths.ox.ac.uk"},
+  {name = "Arkady Wey"}
+]
+maintainers = [
+  {name = "Arkady Wey", email = "arkady.wey@maths.ox.ac.uk"}
+]
+dependencies = [
+  "matplotlib",
+  "numpy",
+]
 
-[project.poetry]
-readme = "template_package/README.md"
+[project.optional-dependencies]
+test = [
+  "pytest < 5.0.0",
+]
 
 [project.urls]
-Source = "https://github.com/ArkadyWey/template-package/"
+homepage = "https://example.com"
+documentation = "https://readthedocs.org"
+repository = "https://github.com"
+changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
 
-[project.scripts] 
-# Define scripts here if you have any
+#[project.scripts]
+#spam-cli = "spam:main_cli"
 
-[project.dependencies]
-numpy = "*"
-matplotlib = "*"
+#[project.gui-scripts]
+#spam-gui = "spam:main_gui"
 
-[project.optional-dependencies] 
-# Define optional dependencies here if you have any
+#[project.entry-points."spam.magical"]
+#tomatoes = "spam:main_tomatoes"
