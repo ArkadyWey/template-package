@@ -5,7 +5,7 @@ setup(name='template_package',
       description='A package to explore MWE functionality.',
       url='https://github.com/ArkadyWey/template-package/',
       author='Arkady Wey',
-      packages=['tstools'],
+      packages=['template_package'],
       install_requires = 
       ["numpy", 
        "matplotlib"],
