@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+template_package/__init__.py
+template_package/module.py
+template_package/run.py
+template_package.egg-info/PKG-INFO
+template_package.egg-info/SOURCES.txt
+template_package.egg-info/dependency_links.txt
+template_package.egg-info/requires.txt
+template_package.egg-info/top_level.txt
+template_package/template_subpackage/__init__.py
+template_package/template_subpackage/another_submodule.py
+template_package/template_subpackage/submodule.py
